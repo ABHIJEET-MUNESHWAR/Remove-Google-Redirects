@@ -11,5 +11,8 @@ This extension works for below products of Google:
 9. Google Groups
 10. Google Products i.e. 'http://www.google.com/shopping'
 
+This extension is available for Google Chrome browser at below link:
+https://chrome.google.com/webstore/detail/ccenmflbeofaceccfhhggbagkblihpoh
+
 This extension is also available for Opera browser at below link:
 https://addons.opera.com/en/extensions/details/remove-google-redirects/
