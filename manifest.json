@@ -1,0 +1,21 @@
+{
+  "name" : "Remove Google Redirects",
+  "version" : "1.0",
+  "description" : "Removes redirection tracking of clicks on all products of Google",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["RemoveGoogleRedirects.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ]
+}
