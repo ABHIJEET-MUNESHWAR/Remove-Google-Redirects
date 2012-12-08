@@ -30,6 +30,8 @@
 // @include		*://www.google.com/products/catalog?*
 // @include		*://www.google.com/shopping/offerdetails?*
 
+// A script modified from:
+//http://userscripts.org/scripts/review/121261
 // @run-at         document-start
 // ==/UserScript==
 
