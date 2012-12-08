@@ -1,5 +1,5 @@
 // ==UserScript==
-// @license			GPL v3 or later version
+// @license		GPL v3 or later version
 // @include		*://www.google.*/*q=*
 // @include		*://www.google.*/*url=*
 // @include		*://www.google.*/*tbs=*
