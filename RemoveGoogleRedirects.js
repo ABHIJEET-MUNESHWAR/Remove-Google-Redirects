@@ -25,6 +25,7 @@
 // @include		*://ditu.google.com/*
 // @include		*://www.youtube.*
 // @include		*://groups.google.com/group/*
+// @include		*://productforums.google.*/*
 // @include		*://www.google.com/bookmarks/*
 // @include		*://history.google.com/bookmarks/*
 // @include		*://www.google.com/history/*
@@ -35,6 +36,7 @@
 // @include		*://www.google.com/mail*
 // @include		*://play.google.com/store*
 // @include		*://books.google.*/*
+
 
 // @exclude		*://www.google.com/reader/*
 // ==/UserScript==
@@ -1379,10 +1381,10 @@ var StraightGoogle = (function ($$d) {
 				$K.listen(match_pattern, null, google_url_clean, { init : true });
 		}
 		// Google Groups
-		else if (/:\/\/groups\.google\.com\/(forum|group)\/.+/.test($K.url)) {
+		else if ( (/:\/\/groups\.google\.com\/(forum|group)\/.+/.test($K.url)) || (/:\/\/productforums\.google\.com\/(forum)\/.+/.test($K.url)) ) {
 			$K.debug('Straight Google [Groups] is now loaded');
 			// for old Google Groups template
-			if (/groups\.google\.com\/group\/.+/.test($K.url))
+			if ( (/groups\.google\.com\/group\/.+/.test($K.url)) || (/productforums\.google\.com\/forum\/.+/.test($K.url)) )
 				common_clean_job();
 		}
 		// Google Bookmarks
